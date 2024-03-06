@@ -1,0 +1,98 @@
+/* Reset some default browser styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Ojuju", sans-serif;
+
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 2% 0 2%;
+}
+/* Apply styles to the columns */
+
+h1 { 
+    margin: 40px 0 40px 0;
+    font-size: 175%;
+
+}
+p {
+    width: full;
+}
+.row{
+    width: 100%; 
+    
+} 
+.item {
+    padding: 30px;
+    margin: auto;
+
+}
+.inner-item{
+    display: flex;
+    position: relative;
+    padding: 5px;
+    padding-top: 40px;
+    
+    border: solid 1px black;
+    background-color: rgb(166, 238, 166);
+    width: full;
+}
+.label{
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: center;
+    border: solid 1px black;
+    padding: 5px 20px 5px 20px;
+    font-size: 125%;
+    font-weight: bold;
+
+}
+#chicken{
+    background-color: rgb(50, 94, 236);
+    color: white;
+}
+#beef{
+    background-color: rgb(238, 173, 222);
+    color: white;
+}
+#sushi{
+    background-color: rgb(79, 192, 212);
+    color: white;
+}
+/* Define grid for different screen sizes */
+@media (min-width: 576px) and (min-width: 767px) {
+    .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+        float: left;
+      }
+    .col-sm-12 {
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+        float: left;
+      }
+    .col-md-6 {
+        width: 50%;
+    }
+    .col-md-12 {
+        width: 100%;
+    }
+}
+
+@media (min-width: 992px) {
+    .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+        float: left;
+      }
+    .col-lg-4 {
+        width: 33.33333333%;
+    }
+}
